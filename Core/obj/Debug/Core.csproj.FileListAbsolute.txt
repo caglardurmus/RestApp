@@ -1,0 +1,9 @@
+C:\Users\caglar.durmus\Desktop\Project\RestApp\Core\bin\Debug\Core.dll
+C:\Users\caglar.durmus\Desktop\Project\RestApp\Core\bin\Debug\Core.pdb
+C:\Users\caglar.durmus\Desktop\Project\RestApp\Core\bin\Debug\LiteDB.dll
+C:\Users\caglar.durmus\Desktop\Project\RestApp\Core\bin\Debug\LiteDB.xml
+C:\Users\caglar.durmus\Desktop\Project\RestApp\Core\obj\Debug\Core.csprojAssemblyReference.cache
+C:\Users\caglar.durmus\Desktop\Project\RestApp\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
+C:\Users\caglar.durmus\Desktop\Project\RestApp\Core\obj\Debug\Core.csproj.CopyComplete
+C:\Users\caglar.durmus\Desktop\Project\RestApp\Core\obj\Debug\Core.dll
+C:\Users\caglar.durmus\Desktop\Project\RestApp\Core\obj\Debug\Core.pdb
