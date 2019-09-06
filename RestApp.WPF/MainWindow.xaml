@@ -6,13 +6,34 @@
         xmlns:local="clr-namespace:RestApp.WPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+
     <Grid x:Name="mainGrid">
-        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="79,35,0,0" VerticalAlignment="Top" Width="120"/>
         <Grid x:Name="gridButtons" HorizontalAlignment="Left" Height="68" VerticalAlignment="Top" Width="571" RenderTransformOrigin="0.679,3.672" Margin="0,351,0,0">
-            <Grid.ColumnDefinitions>
-            </Grid.ColumnDefinitions>
+            <Grid.Resources>
+                <Style BasedOn="{StaticResource {x:Type ToggleButton}}" TargetType="RadioButton">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type ToggleButton}">
+                                <Border Background="{TemplateBinding Background}"
+                                        BorderBrush="{TemplateBinding BorderBrush}"
+                                        BorderThickness="{TemplateBinding BorderThickness}">
+                                    <ContentPresenter x:Name="PART_CONTENT"
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                          TextElement.Foreground="{TemplateBinding Foreground}"></ContentPresenter>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter Property="Background" Value="Blue"/>
+                            <Setter Property="Foreground" Value="White"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Grid.Resources>
         </Grid>
-
-
+        <DataGrid x:Name="dataGridProducts" HorizontalAlignment="Left" Height="346" VerticalAlignment="Top" Width="571"/>
     </Grid>
 </Window>

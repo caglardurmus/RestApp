@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -27,21 +28,29 @@ namespace RestApp.WPF
             InitializeComponent();
 
             var categories = InstanceFactory.GetInstance<ICategoryDal>().GetAll();
-
-            this.comboBox.ItemsSource = categories;
-            this.comboBox.DisplayMemberPath = "CategoryName";
+            var count = 0;
             foreach (var item in categories)
             {
-                this.gridButtons.RowDefinitions.Add(new RowDefinition());
-            }
-            foreach (var item in categories)
-            {
-                var btn = new Button();
+                this.gridButtons.ColumnDefinitions.Add(new ColumnDefinition());
+                var btn = new RadioButton();
+                btn.Name = item.CategoryName + item.Id;
                 btn.Content = item.CategoryName;
-                //btn.Name = item.Id.ToString();
-                
+                btn.Click += new RoutedEventHandler(btn_Click);
+                Grid.SetColumn(btn, count);
                 this.gridButtons.Children.Add(btn);
+                count++;
+            }
 
+
+            void btn_Click(object sender, RoutedEventArgs e)
+            {
+                RadioButton button = (RadioButton)sender;
+                LoadData(button.Content.ToString());
+            }
+
+            void LoadData(string str)
+            {
+                
             }
         }
     }

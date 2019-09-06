@@ -14,6 +14,8 @@ namespace RestApp.Business.DependencyResolvers.Ninject
         public override void Load()
         {
             Bind<ICategoryDal>().To<CategoryDal>().InSingletonScope();
+            Bind<IProductDal>().To<ProductDal>().InSingletonScope();
+            Bind<ISubCategoryDal>().To<SubCategoryDal>().InSingletonScope();
         }
     }
 }
