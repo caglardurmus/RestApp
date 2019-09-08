@@ -9,3 +9,12 @@ C:\Users\caglar.durmus\Desktop\Project\RestApp\RestApp.Entities\obj\Debug\RestAp
 C:\Users\caglar.durmus\Desktop\Project\RestApp\RestApp.Entities\obj\Debug\RestApp.Entities.csproj.CopyComplete
 C:\Users\caglar.durmus\Desktop\Project\RestApp\RestApp.Entities\obj\Debug\RestApp.Entities.dll
 C:\Users\caglar.durmus\Desktop\Project\RestApp\RestApp.Entities\obj\Debug\RestApp.Entities.pdb
+C:\Users\songul.sahin\source\repos\RestApp\RestApp.Entities\bin\Debug\RestApp.Entities.dll
+C:\Users\songul.sahin\source\repos\RestApp\RestApp.Entities\bin\Debug\RestApp.Entities.pdb
+C:\Users\songul.sahin\source\repos\RestApp\RestApp.Entities\bin\Debug\Core.dll
+C:\Users\songul.sahin\source\repos\RestApp\RestApp.Entities\bin\Debug\LiteDB.dll
+C:\Users\songul.sahin\source\repos\RestApp\RestApp.Entities\bin\Debug\Core.pdb
+C:\Users\songul.sahin\source\repos\RestApp\RestApp.Entities\bin\Debug\LiteDB.xml
+C:\Users\songul.sahin\source\repos\RestApp\RestApp.Entities\obj\Debug\RestApp.Entities.csprojResolveAssemblyReference.cache
+C:\Users\songul.sahin\source\repos\RestApp\RestApp.Entities\obj\Debug\RestApp.Entities.dll
+C:\Users\songul.sahin\source\repos\RestApp\RestApp.Entities\obj\Debug\RestApp.Entities.pdb

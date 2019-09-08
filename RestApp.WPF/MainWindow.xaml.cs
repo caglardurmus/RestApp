@@ -25,32 +25,66 @@ namespace RestApp.WPF
     {
         public MainWindow()
         {
-            InitializeComponent();
+        //    InstanceFactory.GetInstance<ICategoryDal>().AddDefaultCategories();
+        //    InstanceFactory.GetInstance<IProductDal>().AddDefaultProduts();
+        //    InstanceFactory.GetInstance<ISubCategoryDal>().AddDefaultSubCategories();
 
+
+
+            InitializeComponent();
             var categories = InstanceFactory.GetInstance<ICategoryDal>().GetAll();
             var count = 0;
             foreach (var item in categories)
             {
                 this.gridButtons.ColumnDefinitions.Add(new ColumnDefinition());
                 var btn = new RadioButton();
-                btn.Name = item.CategoryName + item.Id;
+                btn.Name = "category_" + item.Id;
                 btn.Content = item.CategoryName;
-                btn.Click += new RoutedEventHandler(btn_Click);
+                btn.Click += categoryBtn_Click;
                 Grid.SetColumn(btn, count);
                 this.gridButtons.Children.Add(btn);
                 count++;
             }
+        }
 
-
-            void btn_Click(object sender, RoutedEventArgs e)
+        private void categoryBtn_Click(object sender, RoutedEventArgs e)
+        { 
+            RadioButton button = (RadioButton)sender;
+            var id = button.Name.Replace("category_", "");
+            var subCategories = InstanceFactory.GetInstance<ISubCategoryDal>().GetAll(x => x.CategoryId == Convert.ToInt32(id));
+            this.gridButtonsSub.ColumnDefinitions.Clear();
+            var count = 0;
+            foreach (var item in subCategories)
             {
-                RadioButton button = (RadioButton)sender;
-                LoadData(button.Content.ToString());
+                this.gridButtonsSub.ColumnDefinitions.Add(new ColumnDefinition());
+                var btn = new RadioButton();
+                btn.Name = "subcategory_" + item.Id;
+                btn.Content = item.SubCategoryName;
+                btn.Click += subCategoryBtn_Click;
+                Grid.SetColumn(btn, count);
+                this.gridButtonsSub.Children.Add(btn);
+                count++;
             }
+        }
 
-            void LoadData(string str)
+        private void subCategoryBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+            RadioButton button = (RadioButton)sender;
+            var id = button.Name.Replace("subcategory_", "");
+            var products = InstanceFactory.GetInstance<IProductDal>().GetAll(x => x.SubCategoryId == Convert.ToInt32(id));
+            this.gridProducts.ColumnDefinitions.Clear();
+            var count = 0;
+            foreach (var item in products)
             {
-                
+                this.gridProducts.ColumnDefinitions.Add(new ColumnDefinition());
+                var btn = new RadioButton();
+                btn.Name = "product_" + item.Id;
+                btn.Content = item.ProductName;
+                btn.Click += subCategoryBtn_Click;
+                Grid.SetColumn(btn, count);
+                this.gridProducts.Children.Add(btn);
+                count++;
             }
         }
     }
