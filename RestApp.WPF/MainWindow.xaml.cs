@@ -1,5 +1,6 @@
 ﻿using RestApp.Business.DependencyResolvers.Ninject;
 using RestApp.DataAccess.Abstract;
+using RestApp.Entities.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,13 +26,15 @@ namespace RestApp.WPF
     {
         public MainWindow()
         {
-        //    InstanceFactory.GetInstance<ICategoryDal>().AddDefaultCategories();
-        //    InstanceFactory.GetInstance<IProductDal>().AddDefaultProduts();
-        //    InstanceFactory.GetInstance<ISubCategoryDal>().AddDefaultSubCategories();
+            //InstanceFactory.GetInstance<ICategoryDal>().AddDefaultCategories();
+            //InstanceFactory.GetInstance<IProductDal>().AddDefaultProduts();
+            //InstanceFactory.GetInstance<ISubCategoryDal>().AddDefaultSubCategories();
 
 
 
             InitializeComponent();
+            var a = 0.9;
+            var b = Math.Ceiling(a);
             var categories = InstanceFactory.GetInstance<ICategoryDal>().GetAll();
             var count = 0;
             foreach (var item in categories)
@@ -45,10 +48,12 @@ namespace RestApp.WPF
                 this.gridButtons.Children.Add(btn);
                 count++;
             }
+
+            this.RenderProducts();
         }
 
         private void categoryBtn_Click(object sender, RoutedEventArgs e)
-        { 
+        {
             RadioButton button = (RadioButton)sender;
             var id = button.Name.Replace("category_", "");
             var subCategories = InstanceFactory.GetInstance<ISubCategoryDal>().GetAll(x => x.CategoryId == Convert.ToInt32(id));
@@ -87,5 +92,58 @@ namespace RestApp.WPF
                 count++;
             }
         }
+
+        private void RenderProducts()
+        {
+
+            var products = InstanceFactory.GetInstance<IProductDal>().GetAll();
+            var rowCount = Math.Ceiling(Convert.ToDecimal(products.Count) / 5);
+           
+            for (int i = 0; i < rowCount; i++)
+            {
+                var row = new RowDefinition
+                {
+                    Height = new GridLength(100)
+                };
+                this.gridProducts.RowDefinitions.Add(row);
+            }
+            this.gridProducts.ColumnDefinitions.Add(new ColumnDefinition());
+            this.gridProducts.ColumnDefinitions.Add(new ColumnDefinition());
+            this.gridProducts.ColumnDefinitions.Add(new ColumnDefinition());
+            this.gridProducts.ColumnDefinitions.Add(new ColumnDefinition());
+            this.gridProducts.ColumnDefinitions.Add(new ColumnDefinition());
+            var count = 0;
+            var rowNumber = 0;
+            foreach (var item in products)
+            {
+                if (count>0 &&count % 5 == 0)
+                {
+                    count = 0;
+                    rowNumber++;
+                }
+                var grid = new Grid();
+                grid.Children.Add(new TextBlock
+                {
+                    Text = item.ProductName
+
+                });
+                grid.Children.Add(new TextBlock
+                {
+                    Text = item.Price.ToString(),
+                    Margin = new Thickness(10, 80, 0, 0)
+
+                });
+                var btn = new Button
+                {
+                    Name = "product_" + item.Id,
+                    Content = grid
+                };
+                Grid.SetColumn(btn, count);
+                Grid.SetRow(btn, rowNumber);
+                this.gridProducts.Children.Add(btn);
+                count++;
+            }
+        }
     }
+
 }

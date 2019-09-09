@@ -5,36 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RestApp.WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="768" Width="1366">
 
     <Grid x:Name="mainGrid">
-        <Grid x:Name="gridProducts" HorizontalAlignment="Left" Height="332" VerticalAlignment="Top" Width="571" RenderTransformOrigin="0.679,3.672">
-            <Grid.Resources>
-                <Style BasedOn="{StaticResource {x:Type ToggleButton}}" TargetType="{x:Type RadioButton}">
-                    <Setter Property="Template">
-                        <Setter.Value>
-                            <ControlTemplate TargetType="{x:Type ToggleButton}">
-                                <Border Background="{TemplateBinding Background}"
-                                    BorderBrush="{TemplateBinding BorderBrush}"
-                                    BorderThickness="{TemplateBinding BorderThickness}">
-                                    <ContentPresenter x:Name="PART_CONTENT"
-                                        VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-                                        HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                        TextElement.Foreground="{TemplateBinding Foreground}"/>
-                                </Border>
-                            </ControlTemplate>
-                        </Setter.Value>
-                    </Setter>
-                    <Style.Triggers>
-                        <Trigger Property="IsChecked" Value="True">
-                            <Setter Property="Background" Value="Blue"/>
-                            <Setter Property="Foreground" Value="White"/>
-                        </Trigger>
-                    </Style.Triggers>
-                </Style>
-            </Grid.Resources>
+        <Grid x:Name="gridProducts" HorizontalAlignment="Left" Height="574" VerticalAlignment="Top" Width="897" RenderTransformOrigin="0.679,3.672">
+           
         </Grid>
-        <Grid x:Name="gridButtons" HorizontalAlignment="Left" Height="41" VerticalAlignment="Top" Width="571" RenderTransformOrigin="0.679,3.672" Margin="0,378,0,0">
+        <Grid x:Name="gridButtons" HorizontalAlignment="Left" Height="75" VerticalAlignment="Top" Width="897" RenderTransformOrigin="0.679,3.672" Margin="0,662,0,0">
             <Grid.Resources>
                 <Style BasedOn="{StaticResource {x:Type ToggleButton}}" TargetType="RadioButton">
                     <Setter Property="Template">
@@ -60,7 +37,8 @@
                 </Style>
             </Grid.Resources>
         </Grid>
-        <Grid x:Name="gridButtonsSub" HorizontalAlignment="Left" Height="41" VerticalAlignment="Top" Width="571" RenderTransformOrigin="0.679,3.672" Margin="0,332,0,0">
+        <Grid x:Name="gridButtonsSub" HorizontalAlignment="Left" Height="75" VerticalAlignment="Top" Width="897
+              " RenderTransformOrigin="0.679,3.672" Margin="0,579,0,0">
             <Grid.Resources>
                 <Style BasedOn="{StaticResource {x:Type ToggleButton}}" TargetType="{x:Type RadioButton}">
                     <Setter Property="Template">
@@ -86,6 +64,7 @@
                 </Style>
             </Grid.Resources>
         </Grid>
+
 
     </Grid>
 </Window>

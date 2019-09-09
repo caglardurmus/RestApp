@@ -22,3 +22,16 @@ C:\Users\songul.sahin\source\repos\RestApp\RestApp.DataAccess\bin\Debug\LiteDB.x
 C:\Users\songul.sahin\source\repos\RestApp\RestApp.DataAccess\obj\Debug\RestApp.DataAccess.csprojResolveAssemblyReference.cache
 C:\Users\songul.sahin\source\repos\RestApp\RestApp.DataAccess\obj\Debug\RestApp.DataAccess.dll
 C:\Users\songul.sahin\source\repos\RestApp\RestApp.DataAccess\obj\Debug\RestApp.DataAccess.pdb
+C:\Users\Caglar\source\repos\caglardurmus\RestApp\RestApp.DataAccess\bin\Debug\RestApp.DataAccess.dll
+C:\Users\Caglar\source\repos\caglardurmus\RestApp\RestApp.DataAccess\bin\Debug\RestApp.DataAccess.pdb
+C:\Users\Caglar\source\repos\caglardurmus\RestApp\RestApp.DataAccess\bin\Debug\Core.dll
+C:\Users\Caglar\source\repos\caglardurmus\RestApp\RestApp.DataAccess\bin\Debug\LiteDB.dll
+C:\Users\Caglar\source\repos\caglardurmus\RestApp\RestApp.DataAccess\bin\Debug\RestApp.Entities.dll
+C:\Users\Caglar\source\repos\caglardurmus\RestApp\RestApp.DataAccess\bin\Debug\Core.pdb
+C:\Users\Caglar\source\repos\caglardurmus\RestApp\RestApp.DataAccess\bin\Debug\RestApp.Entities.pdb
+C:\Users\Caglar\source\repos\caglardurmus\RestApp\RestApp.DataAccess\bin\Debug\LiteDB.xml
+C:\Users\Caglar\source\repos\caglardurmus\RestApp\RestApp.DataAccess\obj\Debug\RestApp.DataAccess.csprojAssemblyReference.cache
+C:\Users\Caglar\source\repos\caglardurmus\RestApp\RestApp.DataAccess\obj\Debug\RestApp.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Caglar\source\repos\caglardurmus\RestApp\RestApp.DataAccess\obj\Debug\RestApp.DataAccess.csproj.CopyComplete
+C:\Users\Caglar\source\repos\caglardurmus\RestApp\RestApp.DataAccess\obj\Debug\RestApp.DataAccess.dll
+C:\Users\Caglar\source\repos\caglardurmus\RestApp\RestApp.DataAccess\obj\Debug\RestApp.DataAccess.pdb

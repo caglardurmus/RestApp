@@ -14,3 +14,12 @@ C:\Users\songul.sahin\source\repos\RestApp\Core\bin\Debug\LiteDB.xml
 C:\Users\songul.sahin\source\repos\RestApp\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
 C:\Users\songul.sahin\source\repos\RestApp\Core\obj\Debug\Core.dll
 C:\Users\songul.sahin\source\repos\RestApp\Core\obj\Debug\Core.pdb
+C:\Users\Caglar\source\repos\caglardurmus\RestApp\Core\bin\Debug\Core.dll
+C:\Users\Caglar\source\repos\caglardurmus\RestApp\Core\bin\Debug\Core.pdb
+C:\Users\Caglar\source\repos\caglardurmus\RestApp\Core\bin\Debug\LiteDB.dll
+C:\Users\Caglar\source\repos\caglardurmus\RestApp\Core\bin\Debug\LiteDB.xml
+C:\Users\Caglar\source\repos\caglardurmus\RestApp\Core\obj\Debug\Core.csprojAssemblyReference.cache
+C:\Users\Caglar\source\repos\caglardurmus\RestApp\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
+C:\Users\Caglar\source\repos\caglardurmus\RestApp\Core\obj\Debug\Core.csproj.CopyComplete
+C:\Users\Caglar\source\repos\caglardurmus\RestApp\Core\obj\Debug\Core.dll
+C:\Users\Caglar\source\repos\caglardurmus\RestApp\Core\obj\Debug\Core.pdb
