@@ -279,6 +279,7 @@ namespace RestApp.WPF
             this.SubCategoryDal.AddDefaultSubCategories();
             this.ProductDal.AddDefaultProduts();
         }
+
     }
 
 }

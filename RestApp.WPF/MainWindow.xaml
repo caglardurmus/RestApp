@@ -96,8 +96,6 @@
         <Button Content="ORDER" HorizontalAlignment="Left" VerticalAlignment="Top" Width="183" Margin="897,662,0,0" Height="75" Background="#FF3E83A2" FontSize="15" FontWeight="Bold" Foreground="White"/>
         <Button Content="PAY" HorizontalAlignment="Left" VerticalAlignment="Top" Width="168" Margin="1080,662,0,0" Height="75" FontSize="15" FontWeight="Bold" Background="#FF4DB04F" Foreground="White"/>
         <Button Content="CLEAR" HorizontalAlignment="Left" VerticalAlignment="Top" Width="110" Margin="1248,662,0,0" Height="75" Background="#FFF24436" Foreground="White" FontSize="15" FontWeight="Bold"/>
-        <Image HorizontalAlignment="Left" Height="63" VerticalAlignment="Top" Width="351" RenderTransformOrigin="9.245,0.93" Margin="897,50,0,0"  Source ="pack://application:,,,/assets/images/cart.png" Stretch="Fill"></Image>
-        <Image HorizontalAlignment="Left" Height="612" VerticalAlignment="Top" Width="110" RenderTransformOrigin="13.04,0.96" Margin="1248,50,0,0" Source ="pack://application:,,,/assets/images/cartSide.png" Stretch="Fill"></Image>
         <Grid x:Name="gridCart" HorizontalAlignment="Left" Height="75" Margin="897,587,0,0" VerticalAlignment="Top" Width="351" Background="#FFF0F0F0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="2*"/>
@@ -109,6 +107,20 @@
             <TextBlock Text="Total" FontSize="15" Grid.Column="2" Grid.Row="0" Margin="10,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
 
         </Grid>
+        <Button Content="Current Order" HorizontalAlignment="Left" VerticalAlignment="Top" Width="183" Margin="897,50,0,0" Height="68" Background="#282727" FontSize="20" FontWeight="Bold" Foreground="White" />
+        <Button Content="Last Order" HorizontalAlignment="Left" VerticalAlignment="Top" Width="168" Margin="1080,50,0,0" Height="68" Background="#565555" FontSize="20" FontWeight="Bold" Foreground="White" />
+        <Button Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="55" Margin="1248,50,0,0" Height="68" Background="#214E74" FontSize="30" FontWeight="Bold" Foreground="White" RenderTransformOrigin="1.117,2.996" />
+        <Button Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="55" Margin="1303,50,0,0" Height="68" Background="#214E74" FontSize="30" FontWeight="Bold" Foreground="White" RenderTransformOrigin="1.117,2.996" />
+        <Button Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="55" Margin="1248,118,0,0" Height="68" Background="#214E74" FontSize="30" FontWeight="Bold" Foreground="White" RenderTransformOrigin="1.117,2.996" />
+        <Button Content="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="55" Margin="1303,118,0,0" Height="68" Background="#214E74" FontSize="30" FontWeight="Bold" Foreground="White" RenderTransformOrigin="1.117,2.996" />
+        <Button Content="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="55" Margin="1248,186,0,0" Height="68" Background="#214E74" FontSize="30" FontWeight="Bold" Foreground="White" RenderTransformOrigin="1.117,2.996" />
+        <Button Content="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="55" Margin="1303,186,0,0" Height="68" Background="#214E74" FontSize="30" FontWeight="Bold" Foreground="White" RenderTransformOrigin="1.117,2.996" />
+        <Button Content="7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="55" Margin="1248,254,0,0" Height="68" Background="#214E74" FontSize="30" FontWeight="Bold" Foreground="White" RenderTransformOrigin="1.117,2.996" />
+        <Button Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="55" Margin="1303,254,0,0" Height="68" Background="#214E74" FontSize="30" FontWeight="Bold" Foreground="White" RenderTransformOrigin="1.117,2.996" />
+        <Button Content="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="55" Margin="1248,322,0,0" Height="68" Background="#214E74" FontSize="30" FontWeight="Bold" Foreground="White" RenderTransformOrigin="1.117,2.996" />
+        <Button Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="55" Margin="1303,322,0,0" Height="68" Background="#214E74" FontSize="30" FontWeight="Bold" Foreground="White" RenderTransformOrigin="1.117,2.996" />
+        <Button Content="DEL" HorizontalAlignment="Left" VerticalAlignment="Top" Width="110" Margin="1248,390,0,0" Height="68" Background="#214E74" FontSize="25" FontWeight="Bold" Foreground="White" RenderTransformOrigin="1.117,2.996" />
+        <Rectangle Fill="#FF393837" HorizontalAlignment="Left" Height="204" Margin="1248,458,0,0" Stroke="Black" VerticalAlignment="Top" Width="110"/>
     </Grid>
 
 </Window>
