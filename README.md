@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/caglardurmus/RestApp/blob/master/Myapp.gif" alt="demo" style="max-width:40%;">
+<img src="https://raw.githubusercontent.com/caglardurmus/RestApp/master/Myapp.gif" alt="demo" style="max-width:40%;">
 
 <div>
 <h2 align="center"> RestApp </h2> 
