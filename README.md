@@ -1,8 +1,8 @@
-<img src="https://github.com/caglardurmus/RestApp/blob/master/Myapp.gif" alt="demo" style="max-width:50%;">
+<img src="https://github.com/caglardurmus/RestApp/blob/master/Myapp.gif" alt="demo" style="max-width:40%;">
 
 <div>
 <h2 align="center"> RestApp </h2> 
 <p align="center">This is a little restaurant application example developed with .Net WPF.<br>
-Note: Only category selection works. Not cart and some buttons.
+Note: Only category selection works. Not pay, clear etc.
 </p>
 </div>
